@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<div id="first"> Nisses div </div>
+<ul>
+  <li>Regrettable choice</li>
+  <li>of background color</li>
+  <li>Remove me</li>
+</ul>
+<table class='prime'>
+  <tr>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+  </tr>
+</table>
+<ol>
+  <li>Cats</li>
+  
+</ol>
+</body>
+</html>
+
+
+
+
+
+
+
+/*el1 = document.getElementById('nisse');  // hitta rätt element
+let el2 = document.createElement('p');
+let el3 = document.createElement('p');
+el3.innerHTML = '- HD';
+el2.innerHTML = '- HACKED';
+el2.style.color= 'red'; // CSS font-weight → .fontWeight
+el1.appendChild(el2);
+el1.replaceChild(el3,el2);*/
+
+let first = document.getElementById('first');
+first.innerHTML = 'i am first element';
+let list = document.getElementsByTagName('UL')[0];
+list.style.backgroundColor = 'green';
+let table =document.getElementsByClassName('prime')[0];
+table.style.fontWeight = 'bold';
+let newRow = document.createElement('tr');
+table.appendChild(newRow);
+let list2 = document.getElementsByTagName('OL')[0];
+
+let newLi = document.createElement('li');
+let r = document.createElement('LABEL');
+r.innerHTML='monkey';
+r.setAttribute('for','monkey');
+let input = document.createElement('INPUT');
+input.setAttribute('type','radio');
+input.setAttribute('id','monkey');
+input.setAttribute('name','button');
+newLi.appendChild(r);
+newLi.appendChild(input);
+list2.appendChild(newLi);
+
+let newLi2 = document.createElement('li');
+let r2 = document.createElement('LABEL');
+r2.innerHTML = 'Ducks';
+r2.setAttribute('for','ducks');
+let input2 = document.createElement('INPUT');
+input2.setAttribute('type','radio');
+input2.setAttribute('id','ducks');
+input2.setAttribute('name','button');
+newLi2.appendChild(r2);
+newLi2.appendChild(input2);
+list2.appendChild(newLi2);
+
+let newLi3 = document.createElement('li');
+let r3 = document.createElement('LABEL');
+r3.innerHTML = 'Dolphin';
+r3.setAttribute('for','dolphin');
+let input3 = document.createElement('INPUT');
+input3.setAttribute('type','radio');
+input3.setAttribute('id','dolphin');
+input3.setAttribute('name','button');
+newLi3.appendChild(r3);
+newLi3.appendChild(input3);
+list2.replaceChild(newLi3,list2.children[0])

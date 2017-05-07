@@ -1,0 +1,20 @@
+body{
+	padding:80px 30px 50px 30px;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#div{
+	border:2px dashed deeppink;
+	margin-top:30px;
+	
+}
+#buttonDiv{
+	display: flex;
+	justify-content: center;
+}
+#button{
+	width:30vw;
+}
